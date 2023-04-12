@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://images.unsplash.com/photo-1530133532239-eda6f53fcf0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ------index------ */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.IT-companies {
+    display: flex;
+    flex-direction: row;
+}
+
+.company {
+    width: 30%;
+    background-color: rgba(3, 3, 3, .55);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.company p {
+    letter-spacing: 0.5px;
+    line-height: 23px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.IT-companies img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.company ul {
+    text-align: center;
+}
+
+.ul strong {
+    font-size: 20px;
+}
+
+ul li {
+    list-style: none;
+    line-height: 2;
+}
+
+.company ul li:first-of-type {
+    padding-top: 20px;
+}
+
+/* ------Companies themselves------ */
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.compani ul li a {
+    color: #fff;
+    text-align: left;
+}
+
+.compani ul li a:hover {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.compani ul li strong{
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.compani, .gallery {
+    background-color: rgba(3, 3, 3, .55);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.gallery {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.compani {
+    width: 62%;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 7.5px;
+    box-shadow: 3px 3px 5px rgba(3, 3, 3, .55); 
+    cursor: pointer; 
+    transition: 0.5s;
+}
+
+.gallery img:hover {
+    transform: scale(2);
+}
+
+.btn-back {
+    border-radius: 10px;
+    background-color:  rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(8px);
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 90px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-back a {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: #000;
+    text-decoration: none;
+}
+.btn-back a::after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+
+.btn-back:hover a {
+    padding-left: 25px;
+}
+
+.btn-back:hover a::after {
+    opacity: 1;
+    left: 0;
+}
+
+/* ------Companies themselves------ */
+
+.founder {
+    width: 50%;
+    background-color: rgba(3, 3, 3, .55);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    margin-top: 100px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.founder ul li strong {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.founder  p {
+    line-height: 1.5;
+}
+
+.founder-photo  img{
+    max-width: 450px;
+    height: 450px;
+    margin-top: 200px;
+    margin-left: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(3, 3, 3, .55);
+}
+
+/* ------Responsive------ */
+
+@media screen and (max-width: 1000px){
+
+    .company {
+        width: 40%
+    }
+
+    .company:last-of-type {
+        width: 100%
+    }
+
+    .IT-companies {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .company {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+}
